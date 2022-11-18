@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es_ES">
+<head>
+  <title>Recetario</title>
+  <meta charset="utf-8">
+  <!-- Responsiveness --> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--   Consulta as .css e os scripts en .js para que funcione Bootstrap 4-->
+ 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+  /* Veña vale.... aquí si podemos definir tanto esa clase coma img  */
+  .carousel-inner{
+    width: 60%;
+    height: 60%; }
+  h1{ 
+    margin: 1%;}
+  p{
+    margin: 2%;}
+  small{ 
+    margin: 1%;}
+  button[class="btn btn-primary"]{
+    margin: 2%;  }
+  div[class="alert alert-primary"]{
+    margin: 1%;  }
+  button[class="btn btn-danger"]{
+    margin: 1%;}
+  div[class="dropdown"]{
+    margin: 1%;  }
+</style>
+</head>
+
+<body>
+  <div class="jumbotron text-center">
+    <h1>Recetario</h1>
+    <p>Falo de cociña</p> 
+    <h2>Recetario Español 2022-2023</h2>
+    <p>Real Academia de Comida</p>
+  </div>    
+  <ul class="nav nav-tabs justify-content-center">
+    <li class="nav-item">
+      <a class="nav-link" href="index.html">Pagina inicial</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="bocata.html">Bocadillo de chorizo</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="lentejas.html">Lentejas</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link " href="tortilla.html">Tortilla</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="tartaqueso.html">Tarta de queso</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="flan.html">Flan<span class="badge badge-secondary">New</span></a>
+    </li>
+  </ul>
+  ​
+  <div id="demo" class="carousel slide" data-ride="carousel">
+    ​
+    <!-- Indicadores: raias debaixo das imaxes-->
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+
+    <!-- Slideshow -->
+    <div class="carousel-inner">
+      <!-- Imaxe enooorme -->
+      <div class="carousel-item">
+        <img src="fotos/tortilla1.jpg" alt="Aquí debería saír a miña imaxe" width="70%" height="70%">
+      </div>
+
+      <!--    Quen leva active é o primeiro que sae-->      
+      <div class="carousel-item active" >
+        <img src="fotos/lentejas1.jpg" alt="Aquí debería saír a miña imaxe" width="70%" height="70%">
+      </div>
+      <!-- Imaxe chiquitina -->
+      <div class="carousel-item">
+        <img src="fotos/bocata1.jpg" alt="Aquí debería saír a miña imaxe" width="70%" height="70%">
+      </div>
+      <div class="carousel-item">
+        <img src="fotos/flan1.jpg" alt="Aquí debería saír a miña imaxe" width="70%" height="70%">
+      </div>
+      <div class="carousel-item">
+        <img src="fotos/tartaqueso1.jpg" alt="Aquí debería saír a miña imaxe" width="70%" height="70%">
+      </div>
+    </div>
+
+    <!-- Frechiñas dereita e esquerda -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+    <h1>Para comer bien</h1>
+    <p>Mejor sigue la receta<small class="text-muted">Porque yo no estoy seguro</small></p>
+    <small class="text-muted"></small>
+    <div class="alert alert-primary" role="alert">
+        Puede que esta pagina tenga fallos. Si pasa algo pulsar boton
+    </div>
+    <button type="button" class="btn btn-danger">Quejas</button>
+    <p>A quien quieres donar?</p>
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary">Apple</button>
+      <button type="button" class="btn btn-primary">Samsung</button>
+      <button type="button" class="btn btn-primary">Sony</button>
+    </div>
+    <div class="container">
+      <h2>UPS</h2>
+      <p>Algo no se ha cargado correctamente</p>
+      <div class="spinner-border text-warning"></div>
+    </div>
+    <div class="container">
+      <h2>Finalizacion de proyecto</h2>
+      <p>Esta pagina no esta acabada,proceso de creacion:</p>
+      <div class="progress">
+        <div class="progress-bar" style="width:68%"></div>
+      </div>
+    </div>
+    <p>Idiomas:</p>
+    <ul class="list-group">
+      <li class="list-group-item">Español</li>
+      <li class="list-group-item">Portugues</li>
+      <li class="list-group-item">Ingles</li>
+    </ul>
+    <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">Mas texto</button>
+    <div id="demo" class="collapse">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet dignissimos quos porro voluptatibus cumque tempore hic quis impedit. Numquam tenetur sed fugiat at architecto ullam nesciunt ea magni quasi harum!
+    </div>
+    <div class="container">
+      <h2>CREADOR</h2>
+      <p>Esto fue creado por:</p>
+      <div class="card" style="width:400px">
+        <img class="card-img-top" src="fotos/avatar.jpg" alt="foto" style="width:100%">
+        <div class="card-body">
+          <h4 class="card-title">Alejandro Da Rocha Correa</h4>
+          <p class="card-text">Un chaval con ganas de aprender y aprobar</p>
+          <a href="#" class="btn btn-primary stretched-link">Ver perfil</a>
+        </div>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+        Otros trabajos suyos
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="https://alexrochac.github.io">Index Viajes</a>
+        <a class="dropdown-item" href="#">Link 2</a>
+        <a class="dropdown-item" href="#">Link 3</a>
+      </div>
+    </div> 
+    <div class="jumbotron text-center" style="margin-bottom:0">
+      <ul class="pagination justify-content-center">
+        <li class="page-item"><a class="page-link" href="bocata.html">Bocadillo de chorizo</a></li>
+        <li class="page-item"><a class="page-link" href="lentejas.html">Lentejas</a></li>
+        <li class="page-item"><a class="page-link" href="tortilla.html">Tortilla</a></li>
+        <li class="page-item"><a class="page-link" href="tartaqueso.html">Tarta de queso</a></li>
+        <li class="page-item"><a class="page-link" href="flan.html">Flan</a></li>
+      </ul>
+    </div>  
+</body>
+</html>
